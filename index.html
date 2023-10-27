@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Asciidoctor 2.0.20">
+    <title>Grindelf Queue Documentation</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="article">
+<div id="header">
+    <h1>Grindelf Queue Documentation</h1>
+</div>
+<div id="content">
+    <div class="sect1">
+        <h2 id="_contents">Contents</h2>
+        <div class="sectionbody">
+            <div class="ulist">
+                <ul>
+                    <li>
+                        <p><a href="index.html">Main page</a></p>
+                    </li>
+                    <li>
+                        <p><a href="html_pages/queue.html">Queue data structure</a></p>
+                        <div class="ulist">
+                            <ul>
+                                <li>
+                                    <p><a href="html_pages/init.html">init() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="html_pages/destroy.html">destroy() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="html_pages/enqueue.html">enqueue() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="html_pages/dequeue.html">dequeue() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="html_pages/peek.html">peek() function</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p><a href="html_pages/tests.html">Tests of G-Queue</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_description">Description</h2>
+        <div class="sectionbody">
+            <div class="paragraph">
+                <p>This is a realization of a Queue data structure in C programming language. The short name for library
+                    is G-Queue. This library is simple in use and is provided with tests.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_usage_of_g_queue">Usage of G-Queue</h2>
+        <div class="sectionbody">
+            <div class="paragraph">
+                <p>To use this Queue data structure, you need to include the header file "queue.h" in your C program.
+                    Then, you need to initialize a Queue variable by calling the function "init()". This function will
+                    return a pointer to the new Queue variable.</p>
+            </div>
+            <div class="paragraph">
+                <p><strong>Important:</strong> Make sure that you clear used by your Queue variable memory by calling
+                    the function "destroy()" before exiting your program <strong>:tnatropmI</strong></p>
+            </div>
+            <div class="paragraph">
+                <p>To include an element into your Queue use the function "enqueue()".</p>
+            </div>
+            <div class="paragraph">
+                <p>To remove an element from your Queue use the function "dequeue(your Queue address)".</p>
+            </div>
+            <div class="paragraph">
+                <p>To get the first element of your Queue use the function "peek(your Queue address)".</p>
+            </div>
+            <div class="paragraph">
+                <p>To destroy your Queue use the function "destroy(your Queue address)".</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div id="footer-text">
+        Last updated 2023-10-27 09:24:56 +0300
+    </div>
+</div>
+</body>
+</html>

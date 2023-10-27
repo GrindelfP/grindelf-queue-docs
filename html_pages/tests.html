@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Asciidoctor 2.0.20">
+    <title>Tests of G-Queue library</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body class="article">
+<div id="header">
+    <h1>Tests of G-Queue library</h1>
+</div>
+<div id="content">
+    <div class="sect1">
+        <h2 id="_docs_contents">Docs contents</h2>
+        <div class="sectionbody">
+            <div class="ulist">
+                <ul>
+                    <li>
+                        <p><a href="../index.html">Main page</a></p>
+                    </li>
+                    <li>
+                        <p><a href="queue.html">Queue data structure</a></p>
+                        <div class="ulist">
+                            <ul>
+                                <li>
+                                    <p><a href="init.html">init() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="destroy.html">destroy() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="enqueue.html">enqueue() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="dequeue.html">dequeue() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="peek.html">peek() function</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p><a href="tests.html">Tests of G-Queue</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_description">Description</h2>
+        <div class="sectionbody">
+            <div class="paragraph">
+                <p>This is a set of tests for the G-Queue library, which checks the correctness of the library&#8217;s
+                    work and endurance under wrong conditions.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_tests_framework">Tests framework</h2>
+        <div class="sectionbody">
+            <div class="paragraph">
+                <p>The test for the library is created without any testing framework and consists of a set of functions
+                    that are called in the main() function.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_tests_list">Tests' list</h2>
+        <div class="sectionbody">
+            <div class="paragraph">
+                <p><strong>Test 1:</strong> Tests if no errors occurred on creating and destroying the Queue.</p>
+            </div>
+            <div class="paragraph">
+                <p><strong>Test 2:</strong> Tests if error of wrong size occurred on creating the Queue with size lesser
+                    than 1.</p>
+            </div>
+            <div class="paragraph">
+                <p><strong>Test 3:</strong> Tests if no errors occurred on enqueueing into the Queue.</p>
+            </div>
+            <div class="paragraph">
+                <p><strong>Test 4:</strong> Tests if error of full queue occurred on enqueueing into the full Queue.</p>
+            </div>
+            <div class="paragraph">
+                <p><strong>Test 5:</strong> Tests if no errors occurred on peeking the Queue. The test uses also
+                    enqueueing, because successful peeking is not possible without enqueueing.</p>
+            </div>
+            <div class="paragraph">
+                <p><strong>Test 6:</strong> Tests if error of empty queue occurred on peeking the Queue.</p>
+            </div>
+            <div class="paragraph">
+                <p><strong>Test 7:</strong> Tests if no errors occurred on dequeueing the Queue. The test uses also
+                    enqueueing, because successful dequeueing is not possible without enqueueing.</p>
+            </div>
+            <div class="paragraph">
+                <p><strong>Test 8:</strong> Tests if error of empty queue occurred on dequeueing the empty Queue.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div id="footer-text">
+        Last updated 2023-10-27 10:25:17 +0300
+    </div>
+</div>
+</body>
+</html>

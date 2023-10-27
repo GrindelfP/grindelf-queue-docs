@@ -1,0 +1,31 @@
+= init() function =
+
+== Description ==
+The init() function is used to create a variable of Queue type. It allocates memory for its container and sets main parameters of the queue.
+
+WARNING: This function should be always called when you stop using the queue, otherwise you can get memory leaks.
+
+== Contents ==
+
+* link:../index.adoc[Main page]
+* link:queue.adoc[Queue data structure]
+** link:init.adoc[init() function]
+** link:destroy.adoc[destroy() function]
+** link:enqueue.adoc[enqueue() function]
+** link:dequeue.adoc[dequeue() function]
+** link:peek.adoc[peek() function]
+* link:tests.adoc[Tests of G-Queue]
+
+== Function signature ==
+
+[source, c]
+----
+Queue init(int size);
+----
+
+== Parameters ==
+
+The function takes one parameter - the size of the queue. The size of the queue is the number of elements that can be stored in the queue. It should be greater than 0, otherwise the function returns QUEUE_NULL - the null valued Queue variable, which won't work.
+
+== Return value ==
+The function returns a pointer to the created queue. If the queue was created successfully, the function returns a pointer to the created queue. If the queue wasn't created properly, the function returns QUEUE_NULL - the null valued Queue variable, which won't work.

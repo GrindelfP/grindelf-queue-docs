@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Asciidoctor 2.0.20">
+    <title>Queue data structure and G-Queue</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="article">
+<div id="header">
+    <h1>Queue data structure and G-Queue</h1>
+</div>
+<div id="content">
+    <div class="sect1">
+        <h2 id="_contents">Contents</h2>
+        <div class="sectionbody">
+            <div class="ulist">
+                <ul>
+                    <li>
+                        <p><a href="../index.html">Main page</a></p>
+                    </li>
+                    <li>
+                        <p><a href="queue.html">Queue data structure</a></p>
+                        <div class="ulist">
+                            <ul>
+                                <li>
+                                    <p><a href="init.html">init() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="destroy.html">destroy() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="enqueue.html">enqueue() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="dequeue.html">dequeue() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="peek.html">peek() function</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p><a href="tests.html">Tests of G-Queue</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_description">Description</h2>
+        <div class="sectionbody">
+            <div class="paragraph">
+                <p>The queue data structure is a first-in-first-out (FIFO) data structure. It is a container of objects
+                    that supports fast insertion to the back of the queue and deletion from the front of the queue.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_details">Details</h2>
+        <div class="sectionbody">
+            <div class="paragraph">
+                <p>As far as C programming language does not support Object-Oriented Programming, the G-Queue is
+                    implemented as a C-like struct:</p>
+            </div>
+            <div class="listingblock">
+                <div class="content">
+<pre class="highlight"><code class="language-c" data-lang="c">struct Queue {
+    char **content;
+    int size;
+    int frontCursor;
+    int backCursor;
+    int numberOfElements;
+} typedef Queue;</code></pre>
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>The <strong>typedef Queue</strong> is used to simplify usage of the Queue data structure, so you only
+                    need to print <strong>Queue</strong>, when mentioning the datatype, not <strong>struct
+                        Queue</strong>.</p>
+            </div>
+            <div class="paragraph">
+                <p>The <strong>content</strong> is a 2d pointer to char, which is used to store the elements of the
+                    queue. The "stringed" form of value storage is used because, it is easy to represent most of simple
+                    data as characters.</p>
+            </div>
+            <div class="paragraph">
+                <p>The <strong>size</strong> is the size of the queue, which is fixed and cannot be changed once the
+                    queue is created.</p>
+            </div>
+            <div class="paragraph">
+                <p>The <strong>frontCursor</strong> is the index of the first element in the queue, the <strong>backCursor</strong>
+                    is the index of the last element in the queue. These are used as the front and back indicators of
+                    the queue. The queue works in a loop and when the back cursor reaches end of allocated memory, if
+                    there is fewer elements than the size of the queue the back cursor starts again from 0.</p>
+            </div>
+            <div class="paragraph">
+                <p>The <strong>numberOfElements</strong> is the number of real elements in the queue, which is always
+                    less or equal then the size of the queue.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div id="footer-text">
+        Last updated 2023-10-27 09:36:49 +0300
+    </div>
+</div>
+</body>
+</html>

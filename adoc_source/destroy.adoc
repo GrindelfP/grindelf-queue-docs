@@ -1,0 +1,32 @@
+= destroy() function =
+
+== Description ==
+
+The function destroys the queue and frees the memory allocated for it.
+
+WARNING: this function should be always called when you stop using the queue, otherwise you can get memory leaks.
+
+== Contents ==
+
+* link:../index.adoc[Main page]
+* link:queue.adoc[Queue data structure]
+** link:init.adoc[init() function]
+** link:destroy.adoc[destroy() function]
+** link:enqueue.adoc[enqueue() function]
+** link:dequeue.adoc[dequeue() function]
+** link:peek.adoc[peek() function]
+* link:tests.adoc[Tests of G-Queue]
+
+== Function signature ==
+
+[source, c]
+----
+int destroy(int size);
+----
+
+== Params ==
+
+The function has only one parameter: the pointer to the queue, that is to be destroyed.
+
+== Return value ==
+The function returns 0 if the queue was successfully destroyed, and -1 if the queue was not initialized.

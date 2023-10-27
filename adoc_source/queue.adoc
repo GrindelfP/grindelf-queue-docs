@@ -1,0 +1,41 @@
+= Queue data structure and G-Queue =
+
+== Description ==
+
+The queue data structure is a first-in-first-out (FIFO) data structure. It is a container of objects that supports fast insertion to the back of the queue and deletion from the front of the queue.
+
+== Contents ==
+
+* link:../index.adoc[Main page]
+* link:queue.adoc[Queue data structure]
+** link:init.adoc[init() function]
+** link:destroy.adoc[destroy() function]
+** link:enqueue.adoc[enqueue() function]
+** link:dequeue.adoc[dequeue() function]
+** link:peek.adoc[peek() function]
+* link:tests.adoc[Tests of G-Queue]
+
+== Details ==
+
+As far as C programming language does not support Object-Oriented Programming, the G-Queue is implemented as a C-like struct:
+
+[source, c]
+----
+struct Queue {
+    char **content;
+    int size;
+    int frontCursor;
+    int backCursor;
+    int numberOfElements;
+} typedef Queue;
+----
+
+The *typedef Queue* is used to simplify usage of the Queue data structure, so you only need to print *Queue*, when mentioning the datatype, not *struct Queue*.
+
+The *content* is a 2d pointer to char, which is used to store the elements of the queue. The "stringed" form of value storage is used because, it is easy to represent most of simple data as characters.
+
+The *size* is the size of the queue, which is fixed and cannot be changed once the queue is created.
+
+The *frontCursor* is the index of the first element in the queue, the *backCursor* is the index of the last element in the queue. These are used as the front and back indicators of the queue. The queue works in a loop and when the back cursor reaches end of allocated memory, if there is fewer elements than the size of the queue the back cursor starts again from 0.
+
+The *numberOfElements* is the number of real elements in the queue, which is always less or equal then the size of the queue.

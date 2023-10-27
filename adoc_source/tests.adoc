@@ -1,0 +1,39 @@
+= Tests of G-Queue library =
+
+== Docs contents ==
+
+* link:../index.adoc[Main page]
+* link:queue.adoc[Queue data structure]
+** link:init.adoc[init() function]
+** link:destroy.adoc[destroy() function]
+** link:enqueue.adoc[enqueue() function]
+** link:dequeue.adoc[dequeue() function]
+** link:peek.adoc[peek() function]
+* link:tests.adoc[Tests of G-Queue]
+
+== Description ==
+
+This is a set of tests for the G-Queue library, which checks the correctness of the library's work and endurance under wrong conditions.
+
+
+== Tests framework ==
+
+The test for the library is created without any testing framework and consists of a set of functions that are called in the main() function.
+
+== Tests' list ==
+
+**Test 1:** Tests if no errors occurred on creating and destroying the Queue.
+
+**Test 2:** Tests if error of wrong size occurred on creating the Queue with size lesser than 1.
+
+**Test 3:** Tests if no errors occurred on enqueueing into the Queue.
+
+**Test 4:** Tests if error of full queue occurred on enqueueing into the full Queue.
+
+**Test 5:** Tests if no errors occurred on peeking the Queue. The test uses also enqueueing, because successful peeking is not possible without enqueueing.
+
+**Test 6:** Tests if error of empty queue occurred on peeking the Queue.
+
+**Test 7:** Tests if no errors occurred on dequeueing the Queue. The test uses also enqueueing, because successful dequeueing is not possible without enqueueing.
+
+**Test 8:** Tests if error of empty queue occurred on dequeueing the empty Queue.

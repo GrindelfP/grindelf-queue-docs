@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Asciidoctor 2.0.20">
+    <title>dequeue() function</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body class="article">
+<div id="header">
+    <h1>dequeue() function</h1>
+</div>
+<div id="content">
+    <div class="sect1">
+        <h2 id="_contents">Contents</h2>
+        <div class="sectionbody">
+            <div class="ulist">
+                <ul>
+                    <li>
+                        <p><a href="../index.html">Main page</a></p>
+                    </li>
+                    <li>
+                        <p><a href="queue.html">Queue data structure</a></p>
+                        <div class="ulist">
+                            <ul>
+                                <li>
+                                    <p><a href="init.html">init() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="destroy.html">destroy() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="enqueue.html">enqueue() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="dequeue.html">dequeue() function</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="peek.html">peek() function</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p><a href="tests.html">Tests of G-Queue</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_description">Description</h2>
+        <div class="sectionbody">
+            <div class="paragraph">
+                <p>The function removes the first element from the queue and returns it.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_function_signature">Function signature</h2>
+        <div class="sectionbody">
+            <div class="listingblock">
+                <div class="content">
+                    <pre class="highlight"><code class="language-c"
+                                                 data-lang="c">char *dequeue(Queue *queue);</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_params">Params</h2>
+        <div class="sectionbody">
+            <div class="ulist">
+                <ul>
+                    <li>
+                        <p>queue - a pointer to the queue from which the element will be removed</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_return_value">Return value</h2>
+        <div class="sectionbody">
+            <div class="paragraph">
+                <p>The function returns a pointer to the removed element. If queue is empty it returns NULL.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div id="footer-text">
+        Last updated 2023-10-27 10:07:15 +0300
+    </div>
+</div>
+</body>
+</html>
