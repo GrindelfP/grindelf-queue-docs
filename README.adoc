@@ -1,0 +1,5 @@
+= Grindelf Queue: Docs =
+
+A website containing documentation for my grind elf-queue library.
+This library is described on the main page of documentation, and the source code is
+in this repository.
