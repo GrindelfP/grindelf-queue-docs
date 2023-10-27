@@ -87,10 +87,89 @@
             </div>
         </div>
     </div>
+    <div class="sect1">
+        <h2 id="_how_to_run_using_terminal_on_linux_or_mac_os">HOW TO RUN (using Terminal on Linux or Mac OS)</h2>
+        <div class="sectionbody">
+            <div class="paragraph">
+                <p>0) make sure that you have got CMake and GNU make tools installed on your machine, if not - install
+                    them.</p>
+            </div>
+            <div class="paragraph">
+                <p>0.1.1) install CMake on macOS:</p>
+            </div>
+            <div class="listingblock">
+                <div class="content">
+                    <pre class="highlight"><code class="language-bash" data-lang="bash">brew install cmake</code></pre>
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>0.1.2) install CMake on Linux (Ubuntu example):</p>
+            </div>
+            <div class="listingblock">
+                <div class="content">
+                    <pre class="highlight"><code class="language-bash"
+                                                 data-lang="bash">sudo apt-get -y install cmake</code></pre>
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>0.2.1) install GNU make on macOS:</p>
+            </div>
+            <div class="listingblock">
+                <div class="content">
+                    <pre class="highlight"><code class="language-bash" data-lang="bash">brew install make</code></pre>
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>0.2.2) install GNU make on Linux (Ubuntu example):</p>
+            </div>
+            <div class="listingblock">
+                <div class="content">
+                    <pre class="highlight"><code class="language-bash"
+                                                 data-lang="bash">sudo apt install make</code></pre>
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>0.3) after previous steps check whether you have got CMake and GNU make installed:</p>
+            </div>
+            <div class="listingblock">
+                <div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">cmake --version
+make --version</code></pre>
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>1) Navigate to the required folder of your local machine using terminal or command line.
+                    NB: it is common to complete following operations in the directory: your-project-directory/build
+                    2) Create build files of your project using command:</p>
+            </div>
+            <div class="listingblock">
+                <div class="content">
+                    <pre class="highlight"><code class="language-bash" data-lang="bash">cmake ..</code></pre>
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>3) Build your project using command:</p>
+            </div>
+            <div class="listingblock">
+                <div class="content">
+                    <pre class="highlight"><code class="language-bash" data-lang="bash">make</code></pre>
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>4) After step 3 you will be presented with executable: QueueTest described above run it with one of
+                    following command:</p>
+            </div>
+            <div class="listingblock">
+                <div class="content">
+                    <pre class="highlight"><code class="language-bash" data-lang="bash">./QueueTest</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div id="footer">
     <div id="footer-text">
-        Last updated 2023-10-27 09:24:56 +0300
+        Last updated 2023-10-27 11:09:17 +0300
     </div>
 </div>
 </body>

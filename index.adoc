@@ -1,9 +1,5 @@
 = Grindelf Queue Documentation =
 
-== Description ==
-
-This is a realization of a Queue data structure in C programming language. The short name for library is G-Queue. This library is simple in use and is provided with tests.
-
 == Contents ==
 
 * link:index.adoc[Main page]
@@ -14,6 +10,11 @@ This is a realization of a Queue data structure in C programming language. The s
 ** link:adoc_source/dequeue.adoc[dequeue() function]
 ** link:adoc_source/peek.adoc[peek() function]
 * link:adoc_source/tests.adoc[Tests of G-Queue]
+
+== Description ==
+
+This is a realization of a Queue data structure in C programming language. The short name for library is G-Queue. This library is simple in use and is provided with tests.
+
 
 == Usage of G-Queue ==
 To use this Queue data structure, you need to include the header file "queue.h" in your C program. Then, you need to initialize a Queue variable by calling the function "init()". This function will return a pointer to the new Queue variable.
@@ -27,3 +28,51 @@ To remove an element from your Queue use the function "dequeue(your Queue addres
 To get the first element of your Queue use the function "peek(your Queue address)".
 
 To destroy your Queue use the function "destroy(your Queue address)".
+
+== HOW TO RUN (using Terminal on Linux or Mac OS) ==
+0) make sure that you have got CMake and GNU make tools installed on your machine, if not - install them.
+
+0.1.1) install CMake on macOS:
+[source, bash]
+----
+brew install cmake
+----
+0.1.2) install CMake on Linux (Ubuntu example):
+[source, bash]
+----
+sudo apt-get -y install cmake
+----
+0.2.1) install GNU make on macOS:
+[source, bash]
+----
+brew install make
+----
+
+0.2.2) install GNU make on Linux (Ubuntu example):
+[source, bash]
+----
+sudo apt install make
+----
+0.3) after previous steps check whether you have got CMake and GNU make installed:
+[source, bash]
+----
+cmake --version
+make --version
+----
+1) Navigate to the required folder of your local machine using terminal or command line.
+NB: it is common to complete following operations in the directory: your-project-directory/build
+2) Create build files of your project using command:
+[source, bash]
+----
+cmake ..
+----
+3) Build your project using command:
+[source, bash]
+----
+make
+----
+4) After step 3 you will be presented with executable: QueueTest described above run it with one of following command:
+[source, bash]
+----
+./QueueTest
+----
